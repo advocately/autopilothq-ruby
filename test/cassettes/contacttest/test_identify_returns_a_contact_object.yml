@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api2.autopilothq.com/v1/contact
+    body:
+      encoding: UTF-8
+      string: '{"contact":{"Email":"test@example.com"}}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Autopilot RubyGem 0.1.0
+      Autopilotapikey:
+      - 7ed573a1f01643d6b3f5c15fc3b927cc
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Last-Modified:
+      - Sat, 14 Jan 2017 03:35:57 GMT
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 14 Jan 2017 03:35:57 GMT
+      Connection:
+      - keep-alive
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"contact_id":"person_39812D93-138C-4B26-B0DF-C9E113D96A5A"}'
+    http_version: 
+  recorded_at: Sat, 14 Jan 2017 03:35:58 GMT
+recorded_with: VCR 3.0.3
