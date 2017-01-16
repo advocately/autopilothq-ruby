@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://api2.autopilothq.com/v1/contact
+    method: get
+    uri: https://api2.autopilothq.com/v1/lists
     body:
-      encoding: UTF-8
-      string: '{"contact":{"Email":"test@example.com"}}'
+      encoding: US-ASCII
+      string: ''
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -15,26 +15,26 @@ http_interactions:
       - Autopilot RubyGem 0.1.0
       Autopilotapikey:
       - test
-      Content-Type:
-      - application/json
   response:
     status:
       code: 200
       message: OK
     headers:
       Last-Modified:
-      - Sat, 14 Jan 2017 03:35:57 GMT
+      - Mon, 16 Jan 2017 03:57:02 GMT
       Content-Type:
       - application/json
       Date:
-      - Sat, 14 Jan 2017 03:35:57 GMT
+      - Mon, 16 Jan 2017 03:57:02 GMT
       Connection:
       - keep-alive
       Transfer-Encoding:
       - chunked
     body:
       encoding: ASCII-8BIT
-      string: '{"contact_id":"person_39812D93-138C-4B26-B0DF-C9E113D96A5A"}'
+      string: '{"lists":[{"list_id":"contactlist_6F63260C-AA84-450E-942C-0E01A15CFBD1","title":"Promoters
+        (writing support documentation)"},{"list_id":"contactlist_74DEEAF4-73C3-4EC2-895D-8B4A1634A294","title":"Lachlan''s
+        team"},{"list_id":"contactlist_build-your-journey","title":"Patrick''s team"}]}'
     http_version:
-  recorded_at: Sat, 14 Jan 2017 03:35:58 GMT
+  recorded_at: Mon, 16 Jan 2017 03:57:03 GMT
 recorded_with: VCR 3.0.3

@@ -9,9 +9,9 @@ module Autopilot
       @http_adapter = opts[:http_adapter] || DEFAULT_HTTP_ADAPTER
     end
 
-    # def get_json(path, params = {})
-    #   perform_request(:get, path, params)
-    # end
+    def get_json(path, params = {})
+      perform_request(:get, path, params)
+    end
 
     def post_json(path, params = {})
       perform_request(:post, path, params)
@@ -22,13 +22,13 @@ module Autopilot
     def perform_request(method, path, params)
       uri = prepare_uri(path)
       headers = default_headers.dup.merge('Accept' => 'application/json')
+      headers['Content-Type'] = 'application/json'
 
       if method == :get
         uri.query = Utils.to_query(params) unless params.empty?
         response = @http_adapter.request(method, uri, headers)
       else
         data = prepare_data(params)
-        headers['Content-Type'] = 'application/json'
         response = @http_adapter.request(method, uri, headers, data)
       end
 

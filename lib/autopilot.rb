@@ -16,6 +16,7 @@ require 'autopilot/operations/all'
 require 'autopilot/operations/retrieve'
 require 'autopilot/operations/identify'
 require 'autopilot/resources/contact'
+require 'autopilot/resources/list'
 
 require 'autopilot/errors'
 require 'autopilot/http_response'

@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api2.autopilothq.com/v1/contacts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Autopilot RubyGem 0.1.0
+      Autopilotapikey:
+      - test
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Last-Modified:
+      - Mon, 16 Jan 2017 04:12:14 GMT
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 16 Jan 2017 04:12:14 GMT
+      Connection:
+      - keep-alive
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"contacts":[{"type":"Contact","Name":"Thomas Smith","LastName":"Smith","FirstName":"Thomas","Email":"thomas@example.com","Phone":"+65
+        555-5555","Company":"Advocately","Status":"Testing","LeadSource":"Autopilot","lists":["contactlist_build-your-journey"],"created_at":"2016-12-20T07:31:12.000Z","mail_received":{"batchdelivery_C6590C90-C68A-11E6-94C6-07E94AE2263B_1482219072777-48a06f90-c686-11e6-94c6-07e94ae2263b":1482221012000,"batchdelivery_C6413ED0-C68A-11E6-94C6-07E94AE2263B_1482219072355-48603240-c686-11e6-94c6-07e94ae2263b":1482221227000},"updated_at":"2016-12-20T08:08:00.000Z","mail_opened":{"batchdelivery_C6590C90-C68A-11E6-94C6-07E94AE2263B_1482219072777-48a06f90-c686-11e6-94c6-07e94ae2263b":1482221100000,"batchdelivery_C6413ED0-C68A-11E6-94C6-07E94AE2263B_1482219072355-48603240-c686-11e6-94c6-07e94ae2263b":1482221231000},"contact_id":"person_0162B5E2-5916-4A1F-AC8B-226D75EC8E71"},{"Email":"test@example.com","created_at":"2017-01-14T03:16:19.000Z","api_originated":true,"contact_id":"person_39812D93-138C-4B26-B0DF-C9E113D96A5A"},{"created_at":"2017-01-14T04:13:43.000Z","api_originated":true,"custom_fields":[{"kind":"Review
+        Rating","value":5,"fieldType":"integer","deleted":false},{"kind":"Review Date","value":"2016-11-22T00:00:00.000Z","fieldType":"date","deleted":false},{"kind":"Has
+        Reviewed","value":true,"fieldType":"boolean","deleted":false}],"updated_at":"2017-01-14T04:13:43.000Z","contact_id":"person_4E8B9FB3-4609-4E0C-B38D-90E5446F805A"},{"created_at":"2017-01-14T03:14:21.000Z","api_originated":true,"contact_id":"person_57E4EAE4-AFDD-44B4-AC43-B2EB8AD1FD5A"},{"Email":"thomas+autopilottest@example.com","created_at":"2017-01-15T02:53:19.000Z","api_originated":true,"custom_fields":[{"kind":"NPS
+        Rating","value":10,"fieldType":"integer","deleted":false},{"kind":"NPS Date","value":"2017-01-14T11:58:42.000Z","fieldType":"date","deleted":false}],"updated_at":"2017-01-15T02:53:19.000Z","MailingCity":"","MailingState":"","MailingCountry":"Singapore","Company":"TradeGecko
+        Pte. Ltd.","Title":"VP of Sales","Twitter":"ThomasQSmith","LinkedIn":"https://www.linkedin.com/in/thomas-smith-a845bb4a","contact_id":"person_59699675-662D-4E80-9CD4-D82323E3F591"},{"Email":"lachlan+example.com-nps@example.com","created_at":"2017-01-16T02:00:23.000Z","api_originated":true,"custom_fields":[{"kind":"NPS
+        Rating","value":10,"fieldType":"integer","deleted":false},{"kind":"NPS Date","value":"2017-01-16T02:00:22.000Z","fieldType":"date","deleted":false}],"updated_at":"2017-01-16T02:00:24.000Z","contact_id":"person_598C58AF-53D0-4883-BB47-F6552FED2CA3"},{"type":"Contact","Name":"Lachlan
+        Priest","LastName":"Priest","FirstName":"Lachlan","Email":"lachlan@example.com","Phone":"","Company":"Advocately","Status":"Testing","LeadSource":"Autopilot","lists":["contactlist_build-your-journey"],"created_at":"2016-12-20T07:37:15.000Z","MailingCity":"","MailingState":"","MailingCountry":"Singapore","Title":"Web
+        Developer","Twitter":"lcpriest","LinkedIn":"https://www.linkedin.com/in/lachlan-priest-2b939224","company_priority":false,"updated_at":"2016-12-20T08:10:00.000Z","mail_opened":{"batchdelivery_C6590C90-C68A-11E6-94C6-07E94AE2263B_1482219072777-48a06f90-c686-11e6-94c6-07e94ae2263b":1482221029000,"batchdelivery_C6413ED0-C68A-11E6-94C6-07E94AE2263B_1482219072355-48603240-c686-11e6-94c6-07e94ae2263b":1482221329000},"mail_received":{"batchdelivery_C6590C90-C68A-11E6-94C6-07E94AE2263B_1482219072777-48a06f90-c686-11e6-94c6-07e94ae2263b":1482221018000,"batchdelivery_C6413ED0-C68A-11E6-94C6-07E94AE2263B_1482219072355-48603240-c686-11e6-94c6-07e94ae2263b":1482221225000},"contact_id":"person_61532638-CF63-4842-8F28-77469AD018B4"},{"Email":"lachlan+example.com-review@example.com","created_at":"2017-01-16T02:00:25.000Z","api_originated":true,"custom_fields":[{"kind":"Review
+        Rating","value":5,"fieldType":"integer","deleted":false},{"kind":"Review Date","value":"2017-01-16T02:00:23.000Z","fieldType":"date","deleted":false},{"kind":"Has
+        Reviewed","value":true,"fieldType":"boolean","deleted":false}],"updated_at":"2017-01-16T02:00:25.000Z","MailingCity":"","MailingState":"","MailingCountry":"Singapore","Company":"Rabid","Title":"Web
+        Developer","Twitter":"lcpriest","LinkedIn":"https://www.linkedin.com/in/lachlan-priest-2b939224","contact_id":"person_A24D0836-4296-4E67-A229-CD0B2FEDB8D1"}],"total_contacts":8}'
+    http_version:
+  recorded_at: Mon, 16 Jan 2017 04:12:15 GMT
+recorded_with: VCR 3.0.3

@@ -9,7 +9,7 @@ module Autopilot
         def identify(attrs = {}, client = Autopilot.shared_client)
           attrs = Utils.serialize_values(attrs)
           attrs = { self.record_key => attrs }
-          json = client.post_json(path, attrs)
+          json = client.post_json("/#{record_key.to_s}", attrs)
           new(json)
         end
       end

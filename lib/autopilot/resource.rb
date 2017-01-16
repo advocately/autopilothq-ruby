@@ -1,7 +1,7 @@
 module Autopilot
   class Resource
     class << self
-      attr_accessor :path, :record_key
+      attr_accessor :record_key, :plural_key
       attr_writer :singleton_resource
 
       def singleton_resource?

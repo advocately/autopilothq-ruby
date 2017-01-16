@@ -8,7 +8,7 @@ class ClientTest < Minitest::Test
   end
 
   def test_it_returns_a_client_if_api_key
-    client = ::Autopilot::Client.new(api_key: '7ed573a1f01643d6b3f5c15fc3b927cc')
+    client = ::Autopilot::Client.new(api_key: 'test')
     assert_equal ::Autopilot::Client, client.class
   end
 end
