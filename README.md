@@ -1,7 +1,6 @@
 # Autopilot API Ruby Client
 
-Unofficial Ruby client for the [AutopilotHQ API](http://
-docs.autopilot.apiary.io/).
+Unofficial Ruby client for the [AutopilotHQ API](http://developers.autopilothq.com/).
 
 ## Installation
 
