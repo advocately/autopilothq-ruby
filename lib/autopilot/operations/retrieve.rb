@@ -28,7 +28,6 @@ module Autopilot
         module ClassMethods
           def retrieve(opts = {}, client = Autopilot.shared_client)
             opts = Utils.serialize_values(opts)
-            binding.pry
             json = client.get_json(find_path, opts)
             new(json)
           end
