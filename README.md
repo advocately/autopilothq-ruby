@@ -4,7 +4,7 @@ Unofficial Ruby client for the [AutopilotHQ API](http://developers.autopilothq.c
 
 ## Installation
 
-Add `gem 'autopilot'` to your application's Gemfile, and then run `bundle` to install.
+Add `gem 'autopilot', github: 'advocately/autopilothq-ruby'` to your application's Gemfile, and then run `bundle` to install.
 
 ## Configuration
 
