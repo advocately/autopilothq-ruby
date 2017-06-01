@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api2.autopilothq.com/v1/contacts
+    body:
+      encoding: UTF-8
+      string: '{"contacts":[{"Email":"test1@example.com"},{"Email":"test2@example.com"}]}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Autopilot RubyGem 0.1.0
+      Autopilotapikey:
+      - 0a7c945d0dc9469aad32b6173ead4283
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Last-Modified:
+      - Thu, 01 Jun 2017 11:53:48 GMT
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 01 Jun 2017 11:53:49 GMT
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"contact_ids":["person_8172F2D1-AF73-46CB-ADB1-35FDE21D98EA","person_3DC6779F-AFE0-47A0-9050-109D456AF319"],"email_contact_map":{"test1@example.com":"person_8172F2D1-AF73-46CB-ADB1-35FDE21D98EA","test2@example.com":"person_3DC6779F-AFE0-47A0-9050-109D456AF319"},"_removeResultKeys":["proposedContacts"]}'
+    http_version: 
+  recorded_at: Thu, 01 Jun 2017 11:53:49 GMT
+recorded_with: VCR 3.0.3
