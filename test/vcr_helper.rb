@@ -1,4 +1,3 @@
-require 'pry'
 module VcrHelper
   def around
     VCR.use_cassette(cassette_name) do

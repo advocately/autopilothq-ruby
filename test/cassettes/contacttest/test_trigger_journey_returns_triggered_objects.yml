@@ -1,0 +1,41 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api2.autopilothq.com/v1/trigger/0003/contact/person_EC8E212D-3195-4114-9D06-D5A7DF7D5BAA
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Autopilot RubyGem 0.1.0
+      Autopilotapikey:
+      - test
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Last-Modified:
+      - Fri, 02 Jun 2017 15:22:53 GMT
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 02 Jun 2017 15:22:54 GMT
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bislr_identifier":"happynumberscom","trigger_id":"0003","contact_id_or_email":"person_EC8E212D-3195-4114-9D06-D5A7DF7D5BAA","rqType":"API","terminated":false,"taskCounter":0,"chunkUuid":"59222550-47a7-11e7-a5eb-d5de85a14090","previousSteps":[],"stepUuid":"595babe0-47a7-11e7-adf4-7f4fffa64fdb","apiContact":{"_id":"contacts_person_EC8E212D-3195-4114-9D06-D5A7DF7D5BAA","_rev":"1-9b3eef9b8953568b9fa00614861efea2","Email":"testemail@example.com","created_at":"Fri,
+        02 Jun 2017 15:18:58 GMT","api_originated":true}}'
+    http_version: 
+  recorded_at: Fri, 02 Jun 2017 15:22:54 GMT
+recorded_with: VCR 3.0.3

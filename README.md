@@ -24,9 +24,32 @@ Identifying a contact:
 
 ```ruby
 # Identify (create/update) a contact
-contact3 = Autopilot::Contact.identify({
-  Email: 'test@example.com'
-})
+contact = Autopilot::Contact.identify({ Email: 'test@example.com' })
+```
+
+Bulk identifying contacts:
+
+```ruby
+Autopilot::Contact.bulk_identify([
+  { Email: 'test1@example.com' },
+  { Email: 'test2@example.com' }
+])
+```
+
+Get active triggers list:
+
+```ruby
+Autopilot::Trigger.all
+```
+
+Trigger a journey for a particular contact:
+
+```ruby
+# You can only trigger an existing contact
+# Contact can be identified either by email or by contact id
+# Since trigger ids start with zeros, be sure to pass it as a string
+Autopilot::Contact.trigger_journey('person_8172F2D1-AF73-46CB-ADB1-35FDE21D98EA', '0001')
+Autopilot::Contact.trigger_journey('test@example.com', '0001')
 ```
 
 ## <a name="advanced-configuration"></a> Advanced configuration & testing

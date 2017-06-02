@@ -7,5 +7,6 @@ module Autopilot
     include Operations::All
     include Operations::Retrieve
     include Operations::Identify
+    include Operations::TriggerJourney
   end
 end
