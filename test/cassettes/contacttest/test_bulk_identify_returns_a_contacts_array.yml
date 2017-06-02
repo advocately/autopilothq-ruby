@@ -14,7 +14,7 @@ http_interactions:
       User-Agent:
       - Autopilot RubyGem 0.1.0
       Autopilotapikey:
-      - 0a7c945d0dc9469aad32b6173ead4283
+      - test
       Content-Type:
       - application/json
   response:

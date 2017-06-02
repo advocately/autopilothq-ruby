@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api2.autopilothq.com/v1/triggers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - Autopilot RubyGem 0.1.0
+      Autopilotapikey:
+      - test
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Last-Modified:
+      - Fri, 02 Jun 2017 15:15:23 GMT
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 02 Jun 2017 15:15:24 GMT
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"triggers":[{"trigger_id":"0003","journey":"trigger test","trigger_type":"apiTrigger"}]}'
+    http_version: 
+  recorded_at: Fri, 02 Jun 2017 15:15:24 GMT
+recorded_with: VCR 3.0.3

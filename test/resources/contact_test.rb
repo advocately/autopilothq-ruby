@@ -29,4 +29,11 @@ class ContactTest < Minitest::Test
     assert_equal Autopilot::Contact, response.class
     assert_equal "person_39812D93-138C-4B26-B0DF-C9E113D96A5A", response.contact_id
   end
+
+  def test_trigger_journey_returns_triggered_objects
+    client = ::Autopilot::Client.new(api_key: 'test')
+    response = ::Autopilot::Contact.trigger_journey('person_EC8E212D-3195-4114-9D06-D5A7DF7D5BAA', '0003', client)
+    assert_equal response.trigger_id, '0003'
+    assert_equal response.contact_id_or_email, 'person_EC8E212D-3195-4114-9D06-D5A7DF7D5BAA'
+  end
 end
